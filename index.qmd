@@ -1,0 +1,12 @@
+---
+title: "Welcome"
+format: html
+---
+
+![Marvin Castrejon](images/IMG_9425.jpg){width="150px"}
+
+## 👋 About Me
+
+-   **Career Aspiration**: Data-Driven Digital Marketer\
+-   **Skills**: R, SQL, Quarto, Shiny, Data Visualization\
+-   **Education**: Cal Poly Pomona – M.S. Digital Marketing

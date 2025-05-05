@@ -1,0 +1,134 @@
+---
+title: "United Airlines Satisfaction"
+format: 
+  dashboard:
+    orientation: columns
+    nav-buttons: [github]
+    github: https://github.com/macast7/United-Airlines-Satisfaction.git
+logo: images/United-Logo.png
+logo-alt: "United Airlines Logo"
+---
+
+```{r}
+library(ggplot2)
+library(readxl)
+library(dplyr)
+
+# Load data
+cleaned <- read_excel("Updated_cleaned.xlsx")
+
+# Rename y for clarity
+cleaned$Satisfaction <- ifelse(cleaned$y == 1, "Satisfied", "Not Satisfied")
+```
+
+# 💼 Business Travel
+
+```{r}
+# Filter Business Travel
+biz_data <- cleaned %>%
+  filter(Biztravel == 1) %>%
+  mutate(Satisfaction = ifelse(y == 1, "Satisfied", "Not Satisfied"))
+```
+
+## Column Plots
+
+### Age vs. Flight Distance
+
+```{r}
+#| title: Age vs. Flight Distance
+ggplot(biz_data, aes(x = Age, y = Distance, color = Satisfaction)) +
+  geom_point(alpha = 0.6) +
+  labs(title = "Age vs Flight Distance",
+       x = "Age", y = "Flight Distance") +
+  theme_minimal()
+```
+
+### Seat Comfort Ratings
+
+```{r}
+#| title: Seat Comfort Ratings
+ggplot(biz_data, aes(x = factor(Seat))) +
+  geom_bar(fill = "steelblue") +
+  labs(title = "Seat Comfort Ratings", x = "Seat Rating", y = "Count") +
+  theme_minimal()
+```
+
+## Column - Data Summary
+
+```{r}
+#| title: Data Summary
+
+library(gt)
+
+# Convert satisfaction flag for readability
+cleaned <- cleaned %>%
+  mutate(Satisfaction = ifelse(y == 1, "Satisfied", "Not Satisfied"))
+
+# Create summary by satisfaction
+biz_summary <- biz_data %>%
+  group_by(Satisfaction) %>%
+  summarise(
+    Avg_Age = round(mean(Age, na.rm = TRUE), 1),
+    Avg_Distance = round(mean(Distance, na.rm = TRUE), 0),
+    Avg_Seat_Comfort = round(mean(Seat, na.rm = TRUE), 1),
+    Avg_Wifi_Rating = round(mean(wifi, na.rm = TRUE), 1),
+    Count = n()
+  )
+
+gt(biz_summary) %>%
+  tab_header(
+    title = "Business Travel Satisfaction Summary",
+    subtitle = "Grouped by Satisfaction"
+  )
+```
+
+# ⛱️ Leisure Travel
+
+```{r}
+# Filter Leisure Travel
+leisure_data <- cleaned %>%
+  filter(Biztravel == 0) %>%
+  mutate(Satisfaction = ifelse(y == 1, "Satisfied", "Not Satisfied"))
+```
+
+## Column Plots
+
+### Age vs. Flight Distance
+
+```{r}
+ggplot(leisure_data, aes(x = Age, y = Distance, color = Satisfaction)) +
+  geom_point(alpha = 0.6) +
+  labs(title = "Age vs Flight Distance (Leisure Travel)",
+       x = "Age", y = "Flight Distance") +
+  theme_minimal()
+```
+
+### Seat Comfort Ratings
+
+```{r}
+ggplot(leisure_data, aes(x = factor(Seat))) +
+  geom_bar(fill = "darkgreen") +
+  labs(title = "Seat Comfort Ratings (Leisure Travel)", x = "Seat Rating", y = "Count") +
+  theme_minimal()
+```
+
+## Column - Data Summary
+
+```{r}
+leisure_summary <- leisure_data %>%
+  group_by(Satisfaction) %>%
+  summarise(
+    Avg_Age = round(mean(Age, na.rm = TRUE), 1),
+    Avg_Distance = round(mean(Distance, na.rm = TRUE), 0),
+    Avg_Seat_Comfort = round(mean(Seat, na.rm = TRUE), 1),
+    Avg_Wifi_Rating = round(mean(wifi, na.rm = TRUE), 1),
+    Count = n()
+  )
+
+gt(leisure_summary) %>%
+  tab_header(
+    title = "Leisure Travel Satisfaction Summary",
+    subtitle = "Grouped by Satisfaction"
+  )
+
+```

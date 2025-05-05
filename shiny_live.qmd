@@ -1,0 +1,38 @@
+---
+title: "Essay on Shinylive"
+format: html
+---
+
+## 🧠 What is Shinylive?
+
+Shinylive is a new way to run Shiny apps **without a server**. That means your app runs **directly in the web browser**.
+
+You just write a Shiny app as usual, and Shinylive takes care of making it run online — without needing a computer or server in the background.
+
+## 🔍 How is Shinylive Different from Shiny?
+
+| Feature            | Shiny       | Shinylive |
+|--------------------|-------------|-----------|
+| Needs a server?    | Yes         | No        |
+| Runs in browser?   | No          | Yes       |
+| Good for teaching? | Somewhat    | Yes       |
+| Easy to publish?   | Needs setup | Very easy |
+
+With **Shiny**, the R code runs on a server. With **Shinylive**, the R code runs inside the user’s web browser using special technology called WebAssembly.
+
+## ✅ Pros of Shinylive
+
+-   No need to manage servers
+-   Great for small apps and demos
+-   Runs anywhere: GitHub Pages, Quarto Pub, etc.
+-   Simple to share (just a link)
+
+## ⚠️ Cons of Shinylive
+
+-   Can’t handle big or slow apps
+-   No database or file saving
+-   Not ideal for real-time or secure data
+
+## 🧾 Summary
+
+Shinylive is perfect for showing off small Shiny apps, teaching R, or making interactive tools for class or projects. It’s not meant for complex business dashboards, but it’s a fast and fun way to make apps run **anywhere**—with no setup.

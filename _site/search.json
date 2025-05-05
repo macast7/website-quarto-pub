@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "shiny_live.html",
+    "href": "shiny_live.html",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive is a new way to run Shiny apps without a server. That means your app runs directly in the web browser.\nYou just write a Shiny app as usual, and Shinylive takes care of making it run online — without needing a computer or server in the background."
+  },
+  {
+    "objectID": "shiny_live.html#what-is-shinylive",
+    "href": "shiny_live.html#what-is-shinylive",
+    "title": "Essay on Shinylive",
+    "section": "",
+    "text": "Shinylive is a new way to run Shiny apps without a server. That means your app runs directly in the web browser.\nYou just write a Shiny app as usual, and Shinylive takes care of making it run online — without needing a computer or server in the background."
+  },
+  {
+    "objectID": "shiny_live.html#how-is-shinylive-different-from-shiny",
+    "href": "shiny_live.html#how-is-shinylive-different-from-shiny",
+    "title": "Essay on Shinylive",
+    "section": "🔍 How is Shinylive Different from Shiny?",
+    "text": "🔍 How is Shinylive Different from Shiny?\n\n\n\nFeature\nShiny\nShinylive\n\n\n\n\nNeeds a server?\nYes\nNo\n\n\nRuns in browser?\nNo\nYes\n\n\nGood for teaching?\nSomewhat\nYes\n\n\nEasy to publish?\nNeeds setup\nVery easy\n\n\n\nWith Shiny, the R code runs on a server. With Shinylive, the R code runs inside the user’s web browser using special technology called WebAssembly."
+  },
+  {
+    "objectID": "shiny_live.html#pros-of-shinylive",
+    "href": "shiny_live.html#pros-of-shinylive",
+    "title": "Essay on Shinylive",
+    "section": "✅ Pros of Shinylive",
+    "text": "✅ Pros of Shinylive\n\nNo need to manage servers\nGreat for small apps and demos\nRuns anywhere: GitHub Pages, Quarto Pub, etc.\nSimple to share (just a link)"
+  },
+  {
+    "objectID": "shiny_live.html#cons-of-shinylive",
+    "href": "shiny_live.html#cons-of-shinylive",
+    "title": "Essay on Shinylive",
+    "section": "⚠️ Cons of Shinylive",
+    "text": "⚠️ Cons of Shinylive\n\nCan’t handle big or slow apps\nNo database or file saving\nNot ideal for real-time or secure data"
+  },
+  {
+    "objectID": "shiny_live.html#summary",
+    "href": "shiny_live.html#summary",
+    "title": "Essay on Shinylive",
+    "section": "🧾 Summary",
+    "text": "🧾 Summary\nShinylive is perfect for showing off small Shiny apps, teaching R, or making interactive tools for class or projects. It’s not meant for complex business dashboards, but it’s a fast and fun way to make apps run anywhere—with no setup."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Marvin Castrejon"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Welcome",
+    "section": "👋 About Me",
+    "text": "👋 About Me\n\nCareer Aspiration: Data-Driven Digital Marketer\n\nSkills: R, SQL, Quarto, Shiny, Data Visualization\n\nEducation: Cal Poly Pomona – M.S. Digital Marketing"
+  },
+  {
+    "objectID": "shiny_apps.html",
+    "href": "shiny_apps.html",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny is a tool in R that helps you build interactive websites or dashboards using only R code. This is great for people who know R but not web programming."
+  },
+  {
+    "objectID": "shiny_apps.html#what-is-shiny",
+    "href": "shiny_apps.html#what-is-shiny",
+    "title": "Essay on Shiny Apps",
+    "section": "",
+    "text": "Shiny is a tool in R that helps you build interactive websites or dashboards using only R code. This is great for people who know R but not web programming."
+  },
+  {
+    "objectID": "shiny_apps.html#why-is-shiny-useful",
+    "href": "shiny_apps.html#why-is-shiny-useful",
+    "title": "Essay on Shiny Apps",
+    "section": "💼 Why is Shiny Useful?",
+    "text": "💼 Why is Shiny Useful?\nIn business or research, we often want others to explore our data. Shiny lets you create simple apps where users can change inputs like sliders or dropdowns and immediately see new results, plots, or tables."
+  },
+  {
+    "objectID": "shiny_apps.html#how-does-it-work",
+    "href": "shiny_apps.html#how-does-it-work",
+    "title": "Essay on Shiny Apps",
+    "section": "🔧 How Does It Work?",
+    "text": "🔧 How Does It Work?\nA Shiny app has two main parts:\n\nUI (User Interface) – Controls how the app looks\n\nServer – Controls what the app does\n\nThese are combined using shinyApp(ui, server)."
+  },
+  {
+    "objectID": "shiny_apps.html#summary",
+    "href": "shiny_apps.html#summary",
+    "title": "Essay on Shiny Apps",
+    "section": "🎓 Summary",
+    "text": "🎓 Summary\nShiny is a great way to turn your R analysis into something others can use. It’s perfect for dashboards, internal tools, and reports that update as users interact with them."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]

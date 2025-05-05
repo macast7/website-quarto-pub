@@ -1,0 +1,25 @@
+---
+title: "Essay on Shiny Apps"
+format: html
+---
+
+## 🧠 What is Shiny?
+
+Shiny is a tool in R that helps you build interactive websites or dashboards using only R code. This is great for people who know R but not web programming.
+
+## 💼 Why is Shiny Useful?
+
+In business or research, we often want others to explore our data. Shiny lets you create simple apps where users can change inputs like sliders or dropdowns and immediately see new results, plots, or tables.
+
+## 🔧 How Does It Work?
+
+A Shiny app has two main parts:
+
+1.  **UI (User Interface)** – Controls how the app looks\
+2.  **Server** – Controls what the app does
+
+These are combined using `shinyApp(ui, server)`.
+
+## 🎓 Summary
+
+Shiny is a great way to turn your R analysis into something others can use. It’s perfect for dashboards, internal tools, and reports that update as users interact with them.

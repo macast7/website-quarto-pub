@@ -1,0 +1,17 @@
+{
+  "shiny_apps.qmd": {
+    "shiny_apps.html": "fcb1864a"
+  },
+  "dashboard.qmd": {
+    "dashboard.html": "3242a46a"
+  },
+  "index.qmd": {
+    "index.html": "beeb396e"
+  },
+  "about.qmd": {
+    "about.html": "63709aef"
+  },
+  "shiny_live.qmd": {
+    "shiny_live.html": "c830f1eb"
+  }
+}
