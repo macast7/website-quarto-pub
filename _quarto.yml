@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "My M10 Website"
+  title: "My Website"
   navbar:
     left:
       - text: Home
